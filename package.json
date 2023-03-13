@@ -1,0 +1,11 @@
+{
+  "name": "idi",
+  "version": "1.0.0",
+  "description": "projet 3 jours",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matthieu",
+  "license": "ISC"
+}
