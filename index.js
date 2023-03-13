@@ -11,7 +11,7 @@ app.get("", function(req,res){
 );
 
 app.get("/toto", function(req,res){
-    res.send("salut toto")
+    res.send("ceci est un test de toto")
     }
 );
 
