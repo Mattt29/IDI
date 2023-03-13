@@ -5,8 +5,8 @@ const port = process.env.PORT || 3000;
 
 var data = ["test"];
 
-app.get("", function(req,res){
-    data.push()
+app.get("/formulaire", function(req,res){
+    res.send(file="page.html")
     }
 );
 
