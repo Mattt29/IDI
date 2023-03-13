@@ -5,8 +5,8 @@ const port = process.env.PORT || 3000;
 
 var data = ["test"];
 
-app.get("/formulaire", function(req,res){
-    res.sendFile('C:\Users\matth\Desktop\Cours\Paul Va\MIASHS\Master\S2\IntegrationDonneesIntegrees\IDI/pageXOffset.html')
+app.get("/form", function(req,res){
+    res.sendFile('C:/Users/matth/Desktop/Cours/Paul Va/MIASHS/Master/S2/IntegrationDonneesIntegrees/IDI/page.html')
     }
 );
 

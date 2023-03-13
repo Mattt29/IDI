@@ -1,12 +1,27 @@
 <!DOCTYPE html>
-<html lang="fr">
-	<head>
-		<meta charset="UTF-8" />
-		<title>Matthieu</title>
-	</head>
-	
-	<body>
-		
-	</body>
-	
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Formulaire d'annotations</title>
+  </head>
+  <body>
+    <h1>Créer une nouvelle annotation</h1>
+    <form id="myForm">
+      <label for="title">Titre :</label>
+      <input type="text" id="title" name="title"><br><br>
+      
+      <label for="content">Contenu :</label>
+      <textarea id="content" name="content"></textarea><br><br>
+      
+      <label for="format">Format :</label>
+      <select id="format" name="format">
+        <option value="text">Texte brut</option>
+        <option value="html">HTML</option>
+        <option value="markdown">Markdown</option>
+        <option value="json">JSON</option>
+      </select><br><br>
+      
+      <input type="submit" value="Créer">
+    </form>
+  </body>
 </html>
