@@ -1,17 +1,7 @@
-app.get("/form", function(req,res){
-    res.sendFile('C:/Users/matth/Desktop/Cours/Paul Va/MIASHS/Master/S2/IntegrationDonneesIntegrees/IDI/page.html')
-    }
-);
-
-app.get("/toto", function(req,res){
-    res.send("ceci est un test de toto")
-    }
-);
-
 //REQUIRE
 
 var express = require('express');
-const bodyParser = require('body-parser');
+//const bodyParser = require('body-parser');
 //var cors = require('cors');
 
 // VARIABLE
@@ -20,7 +10,7 @@ var data={};
 var id_commentaire=0;
 var app = express();
 
-/*
+
 //APP USE
 
 app.use(express.static('html'));
@@ -34,17 +24,17 @@ app.use((req, res, next)=>{
 	next();
 });
 
-app.use(bodyParser.json());
+//app.use(bodyParser.json());
 
 
 	
- app.post("/ajout_commentaire", cors(), function(req, res){
+/* app.post("/ajout_commentaire", cors(), function(req, res){
 	var body = req.body;
 	data[id_commentaire]=body;
 	console.log(data);
 	id_commentaire++;
 	res.send("Votre commentaire a bien été pris en compte et porte l'identifiant "+(id_commentaire-1));
-});
+}); */
 
 
 app.get("/acces_commentaire/:id_commentaire_a_acceder", function(req, res){
@@ -140,4 +130,4 @@ app.get("/commentaires_de_uri", function(req, res){
 
 app.listen(port, function(){
 	console.log('serveur listening on port : '+port);
-}); */
+});
