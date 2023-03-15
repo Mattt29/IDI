@@ -2,7 +2,7 @@
 
 var express = require('express');
 //const bodyParser = require('body-parser');
-//var cors = require('cors');
+var cors = require('cors');
 
 // VARIABLE
 const port = process.env.PORT || 3000;
@@ -28,7 +28,7 @@ app.use((req, res, next)=>{
 
 
 	
-app.post("/ajout_commentaire", function(req, res){
+app.post("/ajout_commentaire", cors(), function(req, res){
 	var body = req.body;
 	data[id_commentaire]=body;
 	console.log(data);
