@@ -20,7 +20,7 @@ var data=[];
 var id_commentaire=0;
 var app = express();
 
-
+/*
 //APP USE
 
 app.use(express.static('html'));
@@ -38,7 +38,7 @@ app.use(bodyParser.json());
 
 
 	
-/* app.post("/ajout_commentaire", cors(), function(req, res){
+ app.post("/ajout_commentaire", cors(), function(req, res){
 	var body = req.body;
 	data[id_commentaire]=body;
 	console.log(data);
