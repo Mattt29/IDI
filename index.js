@@ -29,11 +29,23 @@ app.use((req, res, next)=>{
 
 	
 app.post("/ajout_commentaire", cors(), function(req, res){
-	var body = req.body;
+	/* var body = req.body;
 	data[id_commentaire]=body;
 	console.log(data);
 	id_commentaire++;
-	res.send("Votre commentaire a bien été pris en compte et porte l'identifiant "+(id_commentaire-1));
+	res.send("Votre commentaire a bien été pris en compte et porte l'identifiant "+(id_commentaire-1)); */
+    var body = req.body; // body contient la réponse de la requete
+	data[id] = body	 // on stocke le contenu de body dans le dico data
+    if (body.URI in data_uri) { // si l'URI est déjà présent, ona jote son annotation 
+        data_uri[body.URI].push(id)	;		
+    }
+    else {
+        data_uri[body.URI] = [id]; // si l'URI est nouveau, on crée une nouvelle entrée
+    }
+	res.send("votre annotation a été sauvegardé à l'identifiant "+id+" !"); //on envoie la réponse au client
+    id++;
+    console.log("data",data)
+    console.log("data uri",data_uri)
 });
 
 
