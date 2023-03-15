@@ -28,13 +28,13 @@ app.use((req, res, next)=>{
 
 
 	
-/* app.post("/ajout_commentaire", cors(), function(req, res){
+app.post("/ajout_commentaire", function(req, res){
 	var body = req.body;
 	data[id_commentaire]=body;
 	console.log(data);
 	id_commentaire++;
 	res.send("Votre commentaire a bien été pris en compte et porte l'identifiant "+(id_commentaire-1));
-}); */
+});
 
 
 app.get("/acces_commentaire/:id_commentaire_a_acceder", function(req, res){
