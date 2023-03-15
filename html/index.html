@@ -60,7 +60,7 @@
 					format_acces_commentaire='text/'+format_acces_commentaire;
 				}
 
-				<!-- var route = "/acces_commentaire/"+id_commentaire_a_acceder; -->
+				/* var route = "/acces_commentaire/"+id_commentaire_a_acceder; */
 				var route = "https://projetdonneesconnectees.onrender.com/acces_commentaire/"+id_commentaire_a_acceder;
 				fetch(route, {method:'GET', 
 							  headers : {'accept' : format_acces_commentaire}

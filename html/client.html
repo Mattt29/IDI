@@ -26,7 +26,7 @@
 					var body = {"URI": document.getElementById('IdURI').value, 
 								"Commentaire": document.getElementById('IdCommentaire').value};
 					<!-- console.log(body); -->
-					<!-- var route = "/annotation"; -->
+					/* var route = "/annotation"; */
 					var route = "https://projetdonneesconnectees.onrender.com/annotation";
 					fetch(route, {    method:'POST', 
 									  body: JSON.stringify(body) ,
@@ -60,54 +60,13 @@
 					FormatIdAnnot='text/'+FormatIdAnnot;
 				}
 
-				<!-- var route = "/IdAnnot/"+Annot; -->
+				/* var route = "/IdAnnot/"+Annot; */
 				var route = "https://projetdonneesconnectees.onrender.com/IdAnnot/"+Annot;
 				fetch(route, {method:'GET', 
 							  headers : {'accept' : FormatIdAnnot}
 							  });
 			
 			};
-			
-			
-			
-			
-			<!-- function envoiURI(){ -->
-				
-				<!-- var AnnotURI = document.getElementById('AnnotURI').value; -->
-				<!-- var FormatAnnotURI = document.getElementById('FormatAnnotURI').value; -->
-				
-				<!-- if (FormatAnnotURI=='json'){ -->
-					<!-- FormatAnnotURI='application/'+FormatAnnotURI; -->
-				<!-- } -->
-				<!-- else { -->
-					<!-- FormatAnnotURI='text/'+FormatAnnotURI; -->
-				<!-- } -->
-
-				<!-- var route = "/URI/"+AnnotURI; -->
-				<!-- fetch(route, {method:'GET',  -->
-							  <!-- headers : {'accept' : FormatAnnotURI}//, mode:"cors",  -->
-							  <!-- }); -->
-			<!-- }; -->
-			
-			
-			
-			<!-- function envoiAllAnnot(){ -->
-
-				<!-- var FormatAllAnnot = document.getElementById('FormatAllAnnot').value; -->
-				
-				<!-- if (FormatAllAnnot=='json'){ -->
-					<!-- FormatAllAnnot='application/'+FormatAllAnnot; -->
-				<!-- } -->
-				<!-- else { -->
-					<!-- FormatAllAnnot='text/'+FormatAllAnnot; -->
-				<!-- } -->
-
-				<!-- var route = "/AllAnnot"; -->
-				<!-- fetch(route, {method:'GET',  -->
-							  <!-- headers : {'accept' : FormatAllAnnot} -->
-							  <!-- }); -->
-			<!-- }; -->
-			
 
 		</script>
 	</head>
