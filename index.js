@@ -12,11 +12,11 @@ app.get("/toto", function(req,res){
 
 var express = require('express');
 const bodyParser = require('body-parser');
-var cors = require('cors');
+//var cors = require('cors');
 
 // VARIABLE
 const port = process.env.PORT || 3000;
-var data=[];
+var data={};
 var id_commentaire=0;
 var app = express();
 
