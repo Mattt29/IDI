@@ -38,7 +38,7 @@ app.use(bodyParser.json());
 
 
 	
-app.post("/ajout_commentaire", cors(), function(req, res){
+/* app.post("/ajout_commentaire", cors(), function(req, res){
 	var body = req.body;
 	data[id_commentaire]=body;
 	console.log(data);
@@ -140,4 +140,4 @@ app.get("/commentaires_de_uri", function(req, res){
 
 app.listen(port, function(){
 	console.log('serveur listening on port : '+port);
-});
+}); */
